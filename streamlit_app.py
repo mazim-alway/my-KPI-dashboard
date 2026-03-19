@@ -51,29 +51,29 @@ def route():
 
     # Sidebar navigation
     with st.sidebar:
-       st.image("assets/murata_logo.png", use_column_width=True)
+        st.image("assets/murata_logo.png", use_column_width=True)
         st.title("Menu")
 
-    # Normal navigation buttons
-    if st.button("Dashboard"):
-        st.session_state.nav_section = "Dashboard"
+        # Normal navigation buttons
+        if st.button("Dashboard"):
+           st.session_state.nav_section = "Dashboard"
 
-    if st.button("Calendar"):
-        st.session_state.nav_section = "Calendar"
+        if st.button("Calendar"):
+           st.session_state.nav_section = "Calendar"
 
-    if st.button("Research Paper"):
-        st.session_state.nav_section = "Research Paper"
+        if st.button("Research Paper"):
+           st.session_state.nav_section = "Research Paper"
 
-    if st.button("Settings"):
-        st.session_state.nav_section = "Settings"
+        if st.button("Settings"):
+           st.session_state.nav_section = "Settings"
 
-    # Dropdown only for Projects
-    projects_tab = st.selectbox(
-        "Projects",
-        ["Registration", "Submission"],
-        key="projects_tab"
-    )
-    st.session_state.nav_section = "Projects"
+        # Dropdown only for Projects
+        projects_tab = st.selectbox(
+           "Projects",
+           ["Registration", "Submission"],
+           key="projects_tab"
+        )
+        st.session_state.nav_section = "Projects"
 
             
 
