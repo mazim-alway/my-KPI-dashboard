@@ -65,15 +65,6 @@ def route():
                 key="projects_tab"
             )
             
-        
-        # Spacer pushes content down
-        st.sidebar.markdown("<br><br><br><br>", unsafe_allow_html=True)
-
-        # Copyright footer
-        st.sidebar.markdown(
-            "<p style='text-align:center; font-size:12px; color:gray;'>© 2026 Murata Manufacturing Co., Ltd.</p>",
-            unsafe_allow_html=True
-        )
 
     # Render sections
     if st.session_state.nav_section == "Dashboard":
