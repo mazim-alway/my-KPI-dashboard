@@ -68,10 +68,9 @@ def classify_score(score: float):
 # MAIN DASHBOARD PAGE
 # -----------------------------------------------------------
 def show_dashboard(username):
-
-    st.title(
-        f"Dashboard — Welcome, {username}",
-        color:#D32F2F;
+    st.markdown(
+        f"<h1 style='color:#D32F2F; font-size:36px;'>Dashboard — Welcome, {username}</h1>",
+        unsafe_allow_html=True
     )
 
     pic = load_pic_info()
@@ -79,6 +78,7 @@ def show_dashboard(username):
         st.session_state.edit_pic = False
 
     left, right = st.columns([1.3, 3])
+
 
     # -------------------------------------------------------
     # LEFT : PIC INFORMATION
