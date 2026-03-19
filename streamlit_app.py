@@ -98,9 +98,6 @@ def main():
     init_session()
     route()
 
-if __name__ == "__main__":
-    main()
-
 
 if __name__ == "__main__":
     main()
