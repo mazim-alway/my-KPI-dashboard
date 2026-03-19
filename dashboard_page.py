@@ -69,7 +69,10 @@ def classify_score(score: float):
 # -----------------------------------------------------------
 def show_dashboard(username):
 
-    st.title(f"Dashboard — Welcome, {username}")
+    st.title(
+        f"Dashboard — Welcome, {username}",
+        color:#D32F2F;
+    )
 
     pic = load_pic_info()
     if "edit_pic" not in st.session_state:
