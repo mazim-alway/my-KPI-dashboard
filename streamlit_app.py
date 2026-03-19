@@ -64,6 +64,18 @@ def route():
                 ["Registration", "Submission"],
                 key="projects_tab"
             )
+            
+        
+        # Copyright at the bottom
+        st.markdown(
+            """
+            <div style='position: fixed; bottom: 0; width: 100%; text-align: center; 
+                        font-size: 12px; color: gray;'>
+                © 2026 Murata Manufacturing Co., Ltd.
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
     # Render sections
     if st.session_state.nav_section == "Dashboard":
