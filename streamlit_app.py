@@ -51,9 +51,6 @@ def route():
 
     # Sidebar navigation
     with st.sidebar:
-        st.image("assets/murata_logo.png", use_column_width=True)
-        st.title("Menu")
-
         # Normal navigation buttons
         if st.button("Dashboard"):
            st.session_state.nav_section = "Dashboard"
