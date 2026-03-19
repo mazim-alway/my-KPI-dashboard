@@ -66,14 +66,12 @@ def route():
             )
             
         
-        # Copyright at the bottom
-        st.markdown(
-            """
-            <div style='position: fixed; bottom: 0; width: 100%; text-align: center; 
-                        font-size: 12px; color: gray;'>
-                © 2026 LQH-M 
-            </div>
-            """,
+        # Spacer pushes content down
+        st.sidebar.markdown("<br><br><br><br>", unsafe_allow_html=True)
+
+        # Copyright footer
+        st.sidebar.markdown(
+            "<p style='text-align:center; font-size:12px; color:gray;'>© 2026 Murata Manufacturing Co., Ltd.</p>",
             unsafe_allow_html=True
         )
 
