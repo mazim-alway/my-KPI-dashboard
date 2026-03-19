@@ -68,17 +68,19 @@ def classify_score(score: float):
 # MAIN DASHBOARD PAGE
 # -----------------------------------------------------------
 def show_dashboard(username):
-
+    
+    # Copyright footer
     st.markdown(
-        "f"<h1 style='color:#D32F2F; font-size:56px;'>Welcome on board - {username}</h1>",
+        "<p style='text-align:center; font-size:12px; color:gray;'>© 2026 LQH-M Murata Manufacturing Co., Ltd.</p>",
         unsafe_allow_html=True
     )
     
+    # Big red welcome title
     st.markdown(
-        "<p style='text-align:center; font-size:12px; color:gray;'>© 2026 LQH-M Murata Manufacturing Co., Ltd.</p>",
-        unsafe_allowhtml=True
+        f"<h1 style='color:#D32F2F; font-size:56px;'>Welcome on board - {username}</h1>",
+        unsafe_allow_html=True
     )
-    
+      
 
     pic = load_pic_info()
     if "edit_pic" not in st.session_state:
