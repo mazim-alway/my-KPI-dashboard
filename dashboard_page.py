@@ -70,15 +70,15 @@ def classify_score(score: float):
 def show_dashboard(username):
 
     st.markdown(
-        "<p style='text-align:center; font-size:12px; color:gray;'>© 2026 LQH-M Murata Manufacturing Co., Ltd.</p>",
-        unsafe_allowhtml=True
-    )
-
-    
-    st.markdown(
         "f"<h1 style='color:#D32F2F; font-size:56px;'>Welcome on board - {username}</h1>",
         unsafe_allow_html=True
     )
+    
+    st.markdown(
+        "<p style='text-align:center; font-size:12px; color:gray;'>© 2026 LQH-M Murata Manufacturing Co., Ltd.</p>",
+        unsafe_allowhtml=True
+    )
+    
 
     pic = load_pic_info()
     if "edit_pic" not in st.session_state:
