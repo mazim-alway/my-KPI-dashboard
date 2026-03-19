@@ -51,26 +51,27 @@ def route():
 
     # Sidebar navigation
     with st.sidebar:
-        # Normal navigation buttons
+
+    # Normal navigation entries
         if st.button("Dashboard"):
-           st.session_state.nav_section = "Dashboard"
+            st.session_state.nav_section = "Dashboard"
+
+            # Dropdown only for Projects
+        st.session_state.nav_section = "Projects"
+        st.session_state.projects_tab = st.selectbox(
+            "Projects",
+            ["Registration", "Submission"],
+            key="projects_tab"
+        )
 
         if st.button("Calendar"):
-           st.session_state.nav_section = "Calendar"
+            st.session_state.nav_section = "Calendar"
 
         if st.button("Research Paper"):
-           st.session_state.nav_section = "Research Paper"
+            st.session_state.nav_section = "Research Paper"
 
         if st.button("Settings"):
-           st.session_state.nav_section = "Settings"
-
-        # Dropdown only for Projects
-        projects_tab = st.selectbox(
-           "Projects",
-           ["Registration", "Submission"],
-           key="projects_tab"
-        )
-        st.session_state.nav_section = "Projects"
+            st.session_state.nav_section = "Settings"
 
             
 
