@@ -85,13 +85,36 @@ def route():
     elif st.session_state.nav_section == "Settings":
         show_settings()
 
+import streamlit as st
+from db.connection import initialize_database
 
+# -----------------------------------------------------------
+# Custom background
+# -----------------------------------------------------------
+def set_background():
+    st.markdown(
+        """
+        <style>
+        .stApp {
+            background-color: #808080; /* 50% grey */
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+# -----------------------------------------------------------
+# Main
 # -----------------------------------------------------------
 def main():
     st.set_page_config(page_title="APro-MIS", layout="wide")
+    set_background()   # <-- apply grey background here
     initialize_database()
     init_session()
     route()
+
+if __name__ == "__main__":
+    main()
 
 
 if __name__ == "__main__":
