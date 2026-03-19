@@ -69,7 +69,7 @@ def classify_score(score: float):
 # -----------------------------------------------------------
 def show_dashboard(username):
     st.markdown(
-        f"<h1 style='color:#D32F2F; font-size:36px;'>Dashboard — Welcome, {username}</h1>",
+        f"<h1 style='color:#D32F2F; font-size:42px;'>Dashboard — Welcome, {username}</h1>",
         unsafe_allow_html=True
     )
 
