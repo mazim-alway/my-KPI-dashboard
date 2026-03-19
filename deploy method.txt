@@ -1,0 +1,8 @@
+pyinstaller main.py `
+  --name AProMIS `
+  --onefile `
+  --windowed `
+  --add-data "gui;gui" `
+  --add-data "db;db" `
+  --add-data "assets;assets" `
+  --hidden-import PySide6.QtWebEngineWidgets
