@@ -71,7 +71,7 @@ def route():
             """
             <div style='position: fixed; bottom: 0; width: 100%; text-align: center; 
                         font-size: 12px; color: gray;'>
-                © 2026 Murata Manufacturing Co., Ltd.
+                © 2026 LQH-M 
             </div>
             """,
             unsafe_allow_html=True
