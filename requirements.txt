@@ -1,5 +1,7 @@
-openpyxl
-pandas
-plotly
-streamlit
+streamlit>=1.19
+altair==4.2.2
+pandas>=2.0
+numpy>=2.4.1
+plotly>=5.18
+pillow>=10
 
