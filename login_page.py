@@ -41,7 +41,7 @@ def show_login():
         unsafe_allow_html=True
     )
         
-    st.title("APro-MIS KPI System")
+    st.title("WELCOME ON BOARD")
     st.subheader("Login")
 
     # Load users from DB
