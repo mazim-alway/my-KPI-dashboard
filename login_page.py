@@ -36,7 +36,7 @@ def show_login():
     st.markdown(
         """
         <div style="text-align: center;">
-            <img src="assets/WO.png" width="300"><br><br>
+            <img src="assets/WO.PNG" width="300"><br><br>
             <h1 style="color:#808080;">WELCOME ON BOARD</h1>
             <h2>Login</h2>
         </div>
