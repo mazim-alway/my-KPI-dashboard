@@ -37,7 +37,7 @@ def show_login():
         """
         <div style="text-align: center;">
             <img src="assets/worksphere_logo.svg" width="300"><br><br>
-            <h1 style="color:#D32F2F;">APro-MIS KPI System</h1>
+            <h1 style="color:#808080;">WELCOME ON BOARD</h1>
             <h2>Login</h2>
         </div>
         """,
