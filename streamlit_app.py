@@ -51,18 +51,11 @@ def route():
 
     # Sidebar navigation
     with st.sidebar:
+        st.title("Menu")
 
-    # Normal navigation entries
+        # Sequential navigation buttons
         if st.button("Dashboard"):
             st.session_state.nav_section = "Dashboard"
-
-            # Dropdown only for Projects
-        st.session_state.nav_section = "Projects"
-        st.session_state.projects_tab = st.selectbox(
-            "Projects",
-            ["Registration", "Submission"],
-            key="projects_tab"
-        )
 
         if st.button("Calendar"):
             st.session_state.nav_section = "Calendar"
@@ -73,7 +66,13 @@ def route():
         if st.button("Settings"):
             st.session_state.nav_section = "Settings"
 
-            
+        # Only Projects has a dropdown
+        st.session_state.nav_section = "Projects"
+        st.session_state.projects_tab = st.selectbox(
+            "Projects",
+            ["Registration", "Submission"],
+            key="projects_tab"
+        )
 
     # Render sections
     if st.session_state.nav_section == "Dashboard":
@@ -89,14 +88,11 @@ def route():
         show_analytics()
 
     elif st.session_state.nav_section == "Research Paper":
-        show_publish(st.session_state.username)  # <- pass username
+        show_publish(st.session_state.username)
 
     elif st.session_state.nav_section == "Settings":
         show_settings()
-
-import streamlit as st
-from db.connection import initialize_database
-
+           
 
 # -----------------------------------------------------------
 # Main
