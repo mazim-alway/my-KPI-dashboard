@@ -77,7 +77,7 @@ def show_dashboard(username):
     
     # Big red welcome title
     st.markdown(
-        f"<h1 style='color:#D32F2F; font-size:56px;'>Welcome on board - {username}</h1>",
+        f"<h1 style='color:#808080; font-size:56px;'>Welcome on board - {username}</h1>",
         unsafe_allow_html=True
     )
       
