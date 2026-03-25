@@ -32,6 +32,15 @@ def add_new_user(username):
 # STREAMLIT LOGIN PAGE
 # -----------------------------------------------------------
 def show_login():
+    st.markdown(
+        """
+        <div style="text-align: center;">
+            <img src="assets/worksphere_logo.svg" width="300">
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+        
     st.title("APro-MIS KPI System")
     st.subheader("Login")
 
