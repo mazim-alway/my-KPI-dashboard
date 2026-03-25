@@ -67,12 +67,15 @@ def route():
             st.session_state.nav_section = "Settings"
 
         # Only Projects has a dropdown
-        st.session_state.nav_section = "Projects"
-        st.session_state.projects_tab = st.selectbox(
-            "Projects",
-            ["Registration", "Submission"],
-            key="projects_tab"
-        )
+        if st.session_state.nav_section == "Projects":
+            st.selectbox(
+                "Projects",
+                ["Registration", "Submission"],
+                key="projects_tab"
+            )
+        # Add a button to go to Projects
+        if st.button("Projects"):
+            st.session_state.nav_section = "Projects"
 
     # Render sections
     if st.session_state.nav_section == "Dashboard":
@@ -92,10 +95,8 @@ def route():
 
     elif st.session_state.nav_section == "Settings":
         show_settings()
-           
 
-# -----------------------------------------------------------
-# Main
+
 # -----------------------------------------------------------
 def main():
     st.set_page_config(page_title="APro-MIS", layout="wide")
